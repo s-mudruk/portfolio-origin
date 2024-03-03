@@ -1,157 +1,160 @@
 <template>
-  <div class="main">
-    <Intro
-      :class="{
-        'opacity-0': firstHiddenRef
-      }"
-      class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 transition-opacity"
-    />
-    <div class="h-16 lg:h-[15rem]"></div>
-    <img
-      ref="portrait"
-      :class="{
-        'scale-105 z-50 ': isHoveredPortrait
-      }"
-      src="../img/portrait.png"
-      alt="Portrait"
-      class="sm:absolute sm:h-[52vh] top-[44.5vh] sm:left-8 xl:left-9 z-30 transition-transform"
-    />
-    <IntroBottom
-      :class="{
-        'opacity-0': firstHiddenRef
-      }"
-      class="transition-opacity"
-    />
-    <img
-      ref="img_1_1"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_1_1
-      }"
-      src="../img/section1.1.png"
-      alt="image one"
-      class="sm:absolute sm:h-[31vh] 2xl:h-[38vh] sm:top-[38vh] sm:left-[29vw] 2xl:left-[26vw] z-30 transition-transform"
-    />
-    <img
-      ref="img_1_2"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_1_2
-      }"
-      src="../img/section1.2.jpg"
-      alt="image two"
-      class="sm:absolute sm:h-[60vh] 2xl:h-[70vh] sm:top-[13vh] sm:right-8 xl:right-9 z-30 transition-transform"
-    />
-    <abbr title="+79873971117 Text me 😉">
-      <img
-        ref="img_1_3"
+  <div>
+    <div class="relative h-0 overflow-visible z-0 pointer-events-none">
+      <Intro
         :class="{
-          'scale-105 z-50 ': isHoveredImg_1_3
+          'opacity-0': firstHiddenRef
         }"
-        src="../img/section1.3.png"
-        alt="image three"
-        class="sm:absolute sm:h-[32vh] 2xl:h-[36vh] sm:top-[49vh] sm:right-[29vw] 2xl:right-[34vw] z-30 transition-transform"
+        class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 duration-75 transition-opacity z-0"
       />
-    </abbr>
+    </div>
+    <div class="main z-10">
+      <div class="relative top-0 left-0 h-[3800px] w-screen z-10"></div>
+      <img
+        ref="portrait"
+        :class="{
+          'scale-105 z-50 ': isHoveredPortrait
+        }"
+        src="../img/portrait.png"
+        alt="Portrait"
+        class="sm:absolute sm:h-[52vh] top-[44.5vh] sm:left-8 xl:left-9 z-30 transition-transform"
+      />
+      <IntroBottom
+        :class="{
+          'opacity-0': firstHiddenRef
+        }"
+        class="transition-opacity"
+      />
+      <img
+        ref="img_1_1"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_1_1
+        }"
+        src="../img/section1.1.png"
+        alt="image one"
+        class="sm:absolute sm:h-[31vh] 2xl:h-[38vh] sm:top-[38vh] sm:left-[29vw] 2xl:left-[26vw] z-30 transition-transform"
+      />
+      <img
+        ref="img_1_2"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_1_2
+        }"
+        src="../img/section1.2.jpg"
+        alt="image two"
+        class="sm:absolute sm:h-[60vh] 2xl:h-[70vh] sm:top-[13vh] sm:right-8 xl:right-9 z-30 transition-transform"
+      />
+      <abbr title="+79873971117 Text me 😉">
+        <img
+          ref="img_1_3"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_1_3
+          }"
+          src="../img/section1.3.png"
+          alt="image three"
+          class="sm:absolute sm:h-[32vh] 2xl:h-[36vh] sm:top-[49vh] sm:right-[29vw] 2xl:right-[34vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_1"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_1
+          }"
+          src="../img/section2.1.png"
+          alt="image four"
+          class="sm:absolute sm:h-[69vh] sm:top-[120vh] sm:left-8 xl:left-9 z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_2"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_2
+          }"
+          src="../img/section2.2.jpg"
+          alt="image five"
+          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[103.5vh] sm:left-[33vw] 2xl:left-[32vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <video
+          ref="img_2_3"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_3
+          }"
+          class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[103.5vh] sm:right-8 xl:right-9 z-30 transition-transform"
+          autoplay
+          muted
+          loop
+          playsinline
+          src="../img/section2.3.mov"
+          type="video/mov"
+        >
+          A video playback error occurred
+        </video>
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_4"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_4
+          }"
+          src="../img/section2.4.png"
+          alt="image five"
+          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[133.5vh] sm:right-[26vw] 2xl:right-[27vw] z-20 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_5"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_5
+          }"
+          src="../img/section2.5.png"
+          alt="image six"
+          class="sm:absolute sm:h-[40vh] sm:top-[178vh] sm:left-[21vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_6"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_6
+          }"
+          src="../img/section2.6.png"
+          alt="image seven"
+          class="sm:absolute sm:h-[40vh] sm:top-[188vh] sm:left-[52vw] 2xl:left-[45vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_2_7"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_2_7
+          }"
+          src="../img/section2.7.png"
+          alt="image eight"
+          class="sm:absolute sm:h-[40vh] sm:top-[226vh] sm:left-[5.3vw] z-30 transition-transform"
+        />
+      </abbr>
+      <!-- SECTION THREE -->
+      <VanGoghIntro
+        :class="{ 'opacity-0': secondHiddenRef }"
+        class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 transition-opacity"
+      />
+      <abbr title="">
+        <img
+          ref="img_3_1"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_3_1
+          }"
+          src="../img/section3.1.png"
+          alt="image nine"
+          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[303.5vh] sm:left-[43vw] 2xl:left-[34vw] z-30 transition-transform"
+        />
+      </abbr>
+    </div>
   </div>
-  <abbr title="">
-    <img
-      ref="img_2_1"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_1
-      }"
-      src="../img/section2.1.png"
-      alt="image four"
-      class="sm:absolute sm:h-[69vh] sm:top-[120vh] sm:left-8 xl:left-9 z-30 transition-transform"
-    />
-  </abbr>
-  <abbr title="">
-    <img
-      ref="img_2_2"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_2
-      }"
-      src="../img/section2.2.jpg"
-      alt="image five"
-      class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[103.5vh] sm:left-[33vw] z-30 transition-transform"
-    />
-  </abbr>
-  <abbr title="">
-    <video
-      ref="img_2_3"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_3
-      }"
-      class="sm:absolute sm:h-[75vh] sm:top-[103.5vh] sm:right-8 xl:right-9 z-30 transition-transform"
-      autoplay
-      muted
-      loop
-      playsinline
-      src="../img/section2.3.mov"
-      type="video/mov"
-    >
-      A video playback error occurred
-    </video>
-  </abbr>
-  <abbr title="">
-    <img
-      ref="img_2_4"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_4
-      }"
-      src="../img/section2.4.png"
-      alt="image five"
-      class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[133.5vh] sm:right-[26vw] z-20 transition-transform"
-    />
-  </abbr>
-  <abbr title="">
-    <img
-      ref="img_2_5"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_5
-      }"
-      src="../img/section2.5.png"
-      alt="image six"
-      class="sm:absolute sm:h-[40vh] sm:top-[178vh] sm:left-[21vw] z-30 transition-transform"
-    />
-  </abbr>
-  <abbr title="">
-    <img
-      ref="img_2_6"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_6
-      }"
-      src="../img/section2.6.png"
-      alt="image seven"
-      class="sm:absolute sm:h-[40vh] sm:top-[188vh] sm:left-[52vw] 2xl:left-[45vw] z-30 transition-transform"
-    />
-  </abbr>
-  <abbr title="">
-    <img
-      ref="img_2_7"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_2_7
-      }"
-      src="../img/section2.7.png"
-      alt="image eight"
-      class="sm:absolute sm:h-[40vh] sm:top-[226vh] sm:left-[5.3vw] z-30 transition-transform"
-    />
-  </abbr>
-  <!-- SECTION THREE -->
-  <VanGoghIntro
-    :class="{ 'opacity-0': secondHiddenRef }"
-    class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 transition-opacity"
-  />
-  <abbr title="">
-    <img
-      ref="img_3_1"
-      :class="{
-        'scale-105 z-50 ': isHoveredImg_3_1
-      }"
-      src="../img/section3.1.png"
-      alt="image nine"
-      class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[303.5vh] sm:left-[43vw] 2xl:left-[34vw] z-30 transition-transform"
-    />
-  </abbr>
-  <div class="h-[100vh]"></div>
 </template>
 
 <script setup>

@@ -14,7 +14,7 @@ const { x, y } = useScroll(main);
 
 const viewportHeight = ref(window.innerHeight);
 
-const firstBreak = 2.6;
+const firstBreak = 2.55;
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
@@ -32,7 +32,7 @@ const secondHidden = computed(() => {
 <template>
   <main
     ref="main"
-    class="relative text-[#1B1B1B] bg-[#FBFCFC] min-w-80 max-w-[100dvw] h-[100dvh] px-4 sm:px-0 py-9 sm:py-0 font-liter overflow-hidden overflow-y-auto"
+    class="relative text-[#1B1B1B] bg-[#FBFCFC] min-w-80 max-w-[100dvw] h-[100dvh] px-4 sm:px-0 py-9 sm:py-0 font-liter overflow-hidden overflow-y-auto z-10"
   >
     <Header class="fixed top-[3.5vh] sm:left-8 xl:left-9 z-50" />
     <HeaderButtons
@@ -54,7 +54,7 @@ const secondHidden = computed(() => {
       :secondHidden="secondHidden"
       class="z-20"
     />
-    <div class="h-[2500px]"></div>
+    <!-- <div class="h-[2500px]"></div> -->
     <Scrollbar class="fixed bottom-36 right-12" :x="x" :y="y" />
   </main>
 </template>
