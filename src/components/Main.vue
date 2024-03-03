@@ -131,7 +131,7 @@
         'scale-105 z-50 ': isHoveredImg_2_7
       }"
       src="../img/section2.7.png"
-      alt="image five"
+      alt="image eight"
       class="sm:absolute sm:h-[40vh] sm:top-[226vh] sm:left-[5.3vw] z-30 transition-transform"
     />
   </abbr>
@@ -147,8 +147,8 @@
         'scale-105 z-50 ': isHoveredImg_3_1
       }"
       src="../img/section3.1.png"
-      alt="image five"
-      class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[309vh] sm:left-[43vw] z-30 transition-transform"
+      alt="image nine"
+      class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[303.5vh] sm:left-[43vw] 2xl:left-[34vw] z-30 transition-transform"
     />
   </abbr>
   <div class="h-[100vh]"></div>

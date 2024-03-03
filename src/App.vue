@@ -14,7 +14,7 @@ const { x, y } = useScroll(main);
 
 const viewportHeight = ref(window.innerHeight);
 
-const firstBreak = 2.69;
+const firstBreak = 2.66;
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
