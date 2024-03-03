@@ -181,6 +181,17 @@
       </abbr>
       <abbr title="">
         <img
+          ref="img_3_4"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_3_4
+          }"
+          src="../img/section3.2.png"
+          alt="image nine"
+          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[371vh] 2xl:top-[379.5vh] sm:left-[43vw] 2xl:left-[43vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
           ref="img_3_5"
           :class="{
             'scale-105 z-50 ': isHoveredImg_3_5
@@ -190,6 +201,12 @@
           class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[283.5vh] sm:right-8 xl:right-9 z-30 transition-transform"
         />
       </abbr>
+      <!-- SECTION THREE BACKGROUND -->
+      <img
+        src="../img/section3background.svg"
+        alt="image nine"
+        class="sm:absolute w-[65vw] sm:top-[315vh] sm:left-[15vw] z-30 rotate-[13deg] transition-transform"
+      />
     </div>
   </div>
 </template>
