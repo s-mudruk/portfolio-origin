@@ -142,6 +142,10 @@
         :class="{ 'opacity-0': secondHiddenRef }"
         class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 transition-opacity"
       />
+      <VanGoghOutro
+        :class="{ 'opacity-0': secondHiddenRef }"
+        class="sm:fixed sm:bottom-[3.5vh] 2xl:bottom-[3.5vh] sm:right-[3vw] transition-opacity"
+      />
       <abbr title="">
         <img
           ref="img_3_1"
@@ -150,7 +154,40 @@
           }"
           src="../img/section3.1.png"
           alt="image nine"
-          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[303.5vh] sm:left-[43vw] 2xl:left-[34vw] z-30 transition-transform"
+          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[303.5vh] sm:left-[43vw] 2xl:left-[41vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_3_2"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_3_2
+          }"
+          src="../img/section3.4.png"
+          alt="image nine"
+          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[337.5vh] 2xl:top-[340vh] sm:left-[19vw] 2xl:left-[17vw] z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_3_3"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_3_3
+          }"
+          src="../img/section3.3.png"
+          alt="image nine"
+          class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[310vh] sm:left-8 xl:left-9 z-30 transition-transform"
+        />
+      </abbr>
+      <abbr title="">
+        <img
+          ref="img_3_5"
+          :class="{
+            'scale-105 z-50 ': isHoveredImg_3_5
+          }"
+          src="../img/section3.5.png"
+          alt="image nine"
+          class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[283.5vh] sm:right-8 xl:right-9 z-30 transition-transform"
         />
       </abbr>
     </div>
@@ -164,6 +201,7 @@ import VanGoghIntro from './VanGoghIntro.vue';
 
 import { useElementHover } from '@vueuse/core';
 import { ref, toRef } from 'vue';
+import VanGoghOutro from './VanGoghOutro.vue';
 
 const properties = defineProps({
   firstHidden: Boolean,
@@ -191,6 +229,11 @@ const img_2_4 = ref(null);
 const img_2_5 = ref(null);
 const img_2_6 = ref(null);
 const img_2_7 = ref(null);
+const img_3_1 = ref(null);
+const img_3_2 = ref(null);
+const img_3_3 = ref(null);
+const img_3_4 = ref(null);
+const img_3_5 = ref(null);
 
 const hoverOptions = {
   delayEnter: 500,
@@ -208,6 +251,11 @@ const isHoveredImg_2_4 = useElementHover(img_2_4, hoverOptions);
 const isHoveredImg_2_5 = useElementHover(img_2_5, hoverOptions);
 const isHoveredImg_2_6 = useElementHover(img_2_6, hoverOptions);
 const isHoveredImg_2_7 = useElementHover(img_2_7, hoverOptions);
+const isHoveredImg_3_1 = useElementHover(img_3_1, hoverOptions);
+const isHoveredImg_3_2 = useElementHover(img_3_2, hoverOptions);
+const isHoveredImg_3_3 = useElementHover(img_3_3, hoverOptions);
+const isHoveredImg_3_4 = useElementHover(img_3_4, hoverOptions);
+const isHoveredImg_3_5 = useElementHover(img_3_5, hoverOptions);
 </script>
 
 <style scoped></style>
