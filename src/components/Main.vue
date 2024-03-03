@@ -160,7 +160,7 @@ import IntroBottom from './IntroBottom.vue';
 import VanGoghIntro from './VanGoghIntro.vue';
 
 import { useElementHover } from '@vueuse/core';
-import { ref, computed, toRef } from 'vue';
+import { ref, toRef } from 'vue';
 
 const properties = defineProps({
   firstHidden: Boolean,
