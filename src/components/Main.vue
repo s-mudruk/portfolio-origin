@@ -9,7 +9,7 @@
       />
     </div>
     <div class="main z-10">
-      <div class="relative top-0 left-0 h-[3800px] w-screen z-10"></div>
+      <div class="relative top-0 left-0 sm:h-[3800px] w-screen z-10"></div>
       <img
         ref="portrait"
         :class="{
@@ -123,7 +123,7 @@
           }"
           src="../img/section2.6.png"
           alt="image seven"
-          class="sm:absolute sm:h-[40vh] sm:top-[188vh] sm:left-[52vw] 2xl:left-[45vw] z-30 transition-transform"
+          class="sm:absolute sm:h-[40vh] sm:top-[188vh] sm:left-[50vw] 2xl:left-[45vw] z-30 transition-transform"
         />
       </abbr>
       <abbr title="">
