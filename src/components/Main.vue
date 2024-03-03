@@ -73,7 +73,7 @@
           }"
           src="../img/section2.2.jpg"
           alt="image five"
-          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[103.5vh] sm:left-[33vw] 2xl:left-[32vw] z-30 transition-transform"
+          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[103.5vh] sm:left-[33.5vw] 2xl:left-[32vw] z-30 transition-transform"
         />
       </abbr>
       <abbr title="">
@@ -101,7 +101,7 @@
           }"
           src="../img/section2.4.png"
           alt="image five"
-          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[133.5vh] sm:right-[26vw] 2xl:right-[27vw] z-20 transition-transform"
+          class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[133.5vh] sm:right-[25.5vw] 2xl:right-[27vw] z-20 transition-transform"
         />
       </abbr>
       <abbr title="">
