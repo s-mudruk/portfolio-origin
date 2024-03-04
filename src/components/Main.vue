@@ -225,7 +225,7 @@
         }"
         src="../img/section4.1.png"
         alt="image fifteen"
-        class="sm:absolute sm:h-[27vh] 2xl:h-[32vh] sm:top-[453vh] sm:left-8 xl:left-9 z-30 transition-transform"
+        class="sm:absolute sm:h-[27vh] 2xl:h-[32vh] sm:top-[443vh] sm:left-8 xl:left-9 z-30 transition-transform"
       />
     </abbr>
     <abbr title="">
@@ -236,7 +236,7 @@
         }"
         src="../img/section4.2.png"
         alt="image sixteen"
-        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[462vh] sm:left-[43vw] z-30 transition-transform"
+        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[452vh] sm:left-[43vw] z-30 transition-transform"
       />
     </abbr>
     <abbr title="">
@@ -247,7 +247,7 @@
         }"
         src="../img/section4.4.png"
         alt="image seventeen"
-        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[492vh] sm:left-[28.5vw] z-40 transition-transform"
+        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[482vh] sm:left-[28.5vw] z-40 transition-transform"
       />
     </abbr>
     <abbr title="">
@@ -258,7 +258,7 @@
         }"
         src="../img/section4.3.jpg"
         alt="image eighteen"
-        class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[437vh] 2xl:top-[432vh] sm:right-8 xl:right-9 z-30 transition-transform"
+        class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[427vh] 2xl:top-[422vh] sm:right-8 xl:right-9 z-30 transition-transform"
       />
     </abbr>
     <abbr title="">
@@ -269,10 +269,10 @@
         }"
         src="../img/section4.5.jpg"
         alt="image nineteen"
-        class="sm:absolute sm:h-[75vh] 2xl:h-[80vh] sm:top-[507vh] sm:left-8 xl:left-9 z-30 transition-transform"
+        class="sm:absolute sm:h-[75vh] 2xl:h-[80vh] sm:top-[497vh] sm:left-8 xl:left-9 z-30 transition-transform"
       />
     </abbr>
-    <div class="sm:absolute sm:top-[523vh] sm:flex sm:flex-col w-screen">
+    <div class="sm:absolute sm:top-[513vh] sm:flex sm:flex-col w-screen">
       <div
         class="self-end relative sm:h-[80vh] 2xl:h-[94vh] sm:w-[52vw] 2xl:w-[56vw]"
       >
