@@ -10,11 +10,7 @@
         rel="noopener noreferrer"
         class="transition-transform duration-500"
       >
-        <HeaderButton
-          text="резюме"
-          colour="#7D83FF"
-          class="transition-transform hover:scale-105"
-        />
+        <HeaderButton text="резюме" colour="#7D83FF" />
       </a>
       <a
         :class="{
@@ -24,11 +20,7 @@
         class="transition-transform"
         href="mailto:fattesttoo@outlook.com"
       >
-        <HeaderButton
-          text="email"
-          colour="black"
-          class="transition-transform hover:scale-105"
-        />
+        <HeaderButton text="email" colour="black" />
       </a>
     </div>
   </div>

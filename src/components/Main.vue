@@ -9,7 +9,7 @@
       />
     </div>
     <div class="main z-10">
-      <div class="relative top-0 left-0 sm:h-[3800px] w-screen z-10"></div>
+      <div class="relative top-0 left-0 sm:h-[700vh] w-screen z-10"></div>
       <img
         ref="portrait"
         :class="{
@@ -164,7 +164,7 @@
             'scale-105 z-50 ': isHoveredImg_3_2
           }"
           src="../img/section3.4.png"
-          alt="image nine"
+          alt="image ten"
           class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[337.5vh] 2xl:top-[340vh] sm:left-[19vw] 2xl:left-[17vw] z-30 transition-transform"
         />
       </abbr>
@@ -175,7 +175,7 @@
             'scale-105 z-50 ': isHoveredImg_3_3
           }"
           src="../img/section3.3.png"
-          alt="image nine"
+          alt="image eleven"
           class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[310vh] sm:left-8 xl:left-9 z-30 transition-transform"
         />
       </abbr>
@@ -186,7 +186,7 @@
             'scale-105 z-50 ': isHoveredImg_3_4
           }"
           src="../img/section3.2.png"
-          alt="image nine"
+          alt="image twelve"
           class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[371vh] 2xl:top-[379.5vh] sm:left-[43vw] 2xl:left-[43vw] z-30 transition-transform"
         />
       </abbr>
@@ -197,16 +197,139 @@
             'scale-105 z-50 ': isHoveredImg_3_5
           }"
           src="../img/section3.5.png"
-          alt="image nine"
+          alt="image thirteen"
           class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[283.5vh] sm:right-8 xl:right-9 z-30 transition-transform"
         />
       </abbr>
       <!-- SECTION THREE BACKGROUND -->
       <img
         src="../img/section3background.svg"
-        alt="image nine"
+        alt="image fourteen"
         class="sm:absolute w-[65vw] sm:top-[315vh] sm:left-[15vw] z-30 rotate-[13deg] transition-transform"
       />
+    </div>
+    <!-- SECTION FOUR -->
+    <abbr title="">
+      <img
+        ref="img_4_1"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_4_1
+        }"
+        src="../img/section4.1.png"
+        alt="image fifteen"
+        class="sm:absolute sm:h-[27vh] 2xl:h-[32vh] sm:top-[460vh] sm:left-8 xl:left-9 z-30 transition-transform"
+      />
+    </abbr>
+    <abbr title="">
+      <img
+        ref="img_4_2"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_4_2
+        }"
+        src="../img/section4.2.png"
+        alt="image sixteen"
+        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[469vh] sm:left-[43vw] z-30 transition-transform"
+      />
+    </abbr>
+    <abbr title="">
+      <img
+        ref="img_4_4"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_4_4
+        }"
+        src="../img/section4.4.png"
+        alt="image seventeen"
+        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[499vh] sm:left-[28.5vw] z-40 transition-transform"
+      />
+    </abbr>
+    <abbr title="">
+      <img
+        ref="img_4_3"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_4_3
+        }"
+        src="../img/section4.3.jpg"
+        alt="image eighteen"
+        class="sm:absolute sm:h-[70vh] 2xl:h-[75vh] sm:top-[444vh] 2xl:top-[439vh] sm:right-8 xl:right-9 z-30 transition-transform"
+      />
+    </abbr>
+    <abbr title="">
+      <img
+        ref="img_4_5"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_4_5
+        }"
+        src="../img/section4.5.jpg"
+        alt="image nineteen"
+        class="sm:absolute sm:h-[75vh] 2xl:h-[80vh] sm:top-[514vh] sm:left-8 xl:left-9 z-30 transition-transform"
+      />
+    </abbr>
+    <div class="sm:absolute sm:top-[530vh] sm:flex sm:flex-col w-screen">
+      <div
+        class="self-end relative sm:h-[80vh] 2xl:h-[94vh] sm:w-[52vw] 2xl:w-[56vw]"
+      >
+        <abbr title="">
+          <img
+            ref="img_4_6"
+            :class="{
+              'scale-105 z-50 ': isHoveredImg_4_6
+            }"
+            src="../img/section4.6.png"
+            alt="image twenty"
+            class="sm:absolute sm:h-[45vh] 2xl:h-[52vh] sm:top-0 sm:left-[15vw] z-30 transition-transform"
+          />
+        </abbr>
+        <abbr title="">
+          <img
+            ref="img_4_7"
+            :class="{
+              'scale-105 z-50 ': isHoveredImg_4_7
+            }"
+            src="../img/section4.7.png"
+            alt="image einundzwanzig"
+            class="sm:absolute sm:h-[45vh] 2xl:h-[52vh] sm:bottom-0 2xl:bottom-0 sm:left-0 z-20 transition-transform"
+          />
+        </abbr>
+      </div>
+      <div
+        class="sm:relative sm:flex sm:flex-row-reverse sm:w-[48vw] 2xl:w-[44vw]"
+      >
+        <abbr title="">
+          <img
+            ref="img_4_9"
+            :class="{
+              'scale-105 z-50 ': isHoveredImg_4_9
+            }"
+            src="../img/section4.9.png"
+            alt="image twenty three"
+            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform"
+          />
+        </abbr>
+        <abbr title="">
+          <img
+            ref="img_4_8"
+            :class="{
+              'scale-105 z-50 ': isHoveredImg_4_8
+            }"
+            src="../img/section4.8.png"
+            alt="image twenty two"
+            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform"
+          />
+        </abbr>
+      </div>
+      <div class="sm:relative self-end sm:flex sm:w-[52vw] 2xl:w-[56vw]">
+        <abbr title="">
+          <img
+            ref="img_4_10"
+            :class="{
+              'scale-105 z-50 ': isHoveredImg_4_10
+            }"
+            src="../img/section4.10.png"
+            alt="image twenty two"
+            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform"
+          />
+        </abbr>
+      </div>
     </div>
   </div>
 </template>
@@ -251,6 +374,16 @@ const img_3_2 = ref(null);
 const img_3_3 = ref(null);
 const img_3_4 = ref(null);
 const img_3_5 = ref(null);
+const img_4_1 = ref(null);
+const img_4_2 = ref(null);
+const img_4_3 = ref(null);
+const img_4_4 = ref(null);
+const img_4_5 = ref(null);
+const img_4_6 = ref(null);
+const img_4_7 = ref(null);
+const img_4_8 = ref(null);
+const img_4_9 = ref(null);
+const img_4_10 = ref(null);
 
 const hoverOptions = {
   delayEnter: 500,
@@ -273,6 +406,16 @@ const isHoveredImg_3_2 = useElementHover(img_3_2, hoverOptions);
 const isHoveredImg_3_3 = useElementHover(img_3_3, hoverOptions);
 const isHoveredImg_3_4 = useElementHover(img_3_4, hoverOptions);
 const isHoveredImg_3_5 = useElementHover(img_3_5, hoverOptions);
+const isHoveredImg_4_1 = useElementHover(img_4_1, hoverOptions);
+const isHoveredImg_4_2 = useElementHover(img_4_2, hoverOptions);
+const isHoveredImg_4_3 = useElementHover(img_4_3, hoverOptions);
+const isHoveredImg_4_4 = useElementHover(img_4_4, hoverOptions);
+const isHoveredImg_4_5 = useElementHover(img_4_5, hoverOptions);
+const isHoveredImg_4_6 = useElementHover(img_4_6, hoverOptions);
+const isHoveredImg_4_7 = useElementHover(img_4_7, hoverOptions);
+const isHoveredImg_4_8 = useElementHover(img_4_8, hoverOptions);
+const isHoveredImg_4_9 = useElementHover(img_4_9, hoverOptions);
+const isHoveredImg_4_10 = useElementHover(img_4_10, hoverOptions);
 </script>
 
 <style scoped></style>

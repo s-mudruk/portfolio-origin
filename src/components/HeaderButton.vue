@@ -5,7 +5,7 @@
       backgroundColor: properties.colour
     }"
     type="button"
-    class="px-7 py-[0.40rem] rounded-[1.5rem]"
+    class="px-7 py-[0.40rem] rounded-[1.5rem] transition-transform hover:scale-105 active:scale-100"
   >
     <span class="relative top-[-0.15rem] scale-110">
       {{ properties.text || 'Button' }}
