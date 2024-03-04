@@ -302,7 +302,7 @@
             }"
             src="../img/section4.9.png"
             alt="image twenty three"
-            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform"
+            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform !aspect-[805/450] 2xl:max-w-[17.2vw]"
           />
         </abbr>
         <abbr title="">
@@ -313,7 +313,7 @@
             }"
             src="../img/section4.8.png"
             alt="image twenty two"
-            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform"
+            class="sm:relative sm:h-[18vh] 2xl:h-[20vh] z-30 transition-transform !aspect-[1113/450] 2xl:max-w-[23.8vw]"
           />
         </abbr>
       </div>
