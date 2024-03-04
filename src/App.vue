@@ -16,6 +16,7 @@ const viewportHeight = ref(window.innerHeight);
 
 const firstBreak = 2.55;
 const secondBreak = 4;
+const thirdBreak = 6.25;
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
@@ -33,7 +34,14 @@ const secondHidden = computed(() => {
 });
 
 const fourthHidden = computed(() => {
-  return y.value <= secondBreak * viewportHeight.value;
+  return (
+    y.value <= secondBreak * viewportHeight.value ||
+    y.value > thirdBreak * viewportHeight.value
+  );
+});
+
+const fifthHidden = computed(() => {
+  return y.value <= thirdBreak * viewportHeight.value;
 });
 </script>
 
@@ -61,6 +69,7 @@ const fourthHidden = computed(() => {
       :firstHidden="firstHidden"
       :secondHidden="secondHidden"
       :fourthHidden="fourthHidden"
+      :fifthHidden="fifthHidden"
       class="z-20"
     />
     <!-- <div class="h-[2500px]"></div> -->
