@@ -32,7 +32,7 @@
         }"
         src="../img/section1.1.png"
         alt="image one"
-        class="sm:absolute sm:h-[31vh] 2xl:h-[38vh] sm:top-[38vh] sm:left-[29vw] 2xl:left-[26vw] z-30 transition-transform"
+        class="sm:absolute sm:h-[31vh] 2xl:h-[38vh] sm:top-[38vh] sm:left-[26vw] 2xl:left-[26vw] z-30 transition-transform"
       />
       <img
         ref="img_1_2"
@@ -51,7 +51,7 @@
           }"
           src="../img/section1.3.png"
           alt="image three"
-          class="sm:absolute sm:h-[32vh] 2xl:h-[36vh] sm:top-[49vh] sm:right-[29vw] 2xl:right-[34vw] z-30 transition-transform"
+          class="sm:absolute sm:h-[32vh] 2xl:h-[36vh] sm:top-[49vh] sm:right-[32vw] 2xl:right-[34vw] z-30 transition-transform"
         />
       </abbr>
       <abbr title="">
@@ -209,6 +209,14 @@
       />
     </div>
     <!-- SECTION FOUR -->
+    <SectionFourIntro
+      :class="{ 'opacity-0': fourthHiddenRef }"
+      class="sm:fixed top-[16vh] 2xl:top-[18vh] sm:left-8 xl:left-9 transition-opacity"
+    />
+    <SectionFourOutro
+      :class="{ 'opacity-0': fourthHiddenRef }"
+      class="sm:fixed sm:bottom-[3.5vh] 2xl:bottom-[3.5vh] sm:right-[3vw] transition-opacity"
+    />
     <abbr title="">
       <img
         ref="img_4_1"
@@ -351,18 +359,22 @@
 import Intro from './Intro.vue';
 import IntroBottom from './IntroBottom.vue';
 import VanGoghIntro from './VanGoghIntro.vue';
-
-import { useElementHover } from '@vueuse/core';
 import { ref, toRef } from 'vue';
 import VanGoghOutro from './VanGoghOutro.vue';
+import SectionFourIntro from './SectionFourIntro.vue';
+import SectionFourOutro from './SectionFourOutro.vue';
+
+import { useElementHover } from '@vueuse/core';
 
 const properties = defineProps({
   firstHidden: Boolean,
-  secondHidden: Boolean
+  secondHidden: Boolean,
+  fourthHidden: Boolean
 });
 
 const firstHiddenRef = toRef(properties, 'firstHidden');
 const secondHiddenRef = toRef(properties, 'secondHidden');
+const fourthHiddenRef = toRef(properties, 'fourthHidden');
 
 // const firstPartHidden = computed(() => {
 //   return properties.scroll < 2450;

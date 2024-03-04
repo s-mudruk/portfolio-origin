@@ -15,6 +15,7 @@ const { x, y } = useScroll(main);
 const viewportHeight = ref(window.innerHeight);
 
 const firstBreak = 2.55;
+const secondBreak = 4;
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
@@ -25,7 +26,14 @@ const firstHidden = computed(() => {
 });
 
 const secondHidden = computed(() => {
-  return y.value <= firstBreak * viewportHeight.value;
+  return (
+    y.value <= firstBreak * viewportHeight.value ||
+    y.value > secondBreak * viewportHeight.value
+  );
+});
+
+const fourthHidden = computed(() => {
+  return y.value <= secondBreak * viewportHeight.value;
 });
 </script>
 
@@ -52,6 +60,7 @@ const secondHidden = computed(() => {
     <Main
       :firstHidden="firstHidden"
       :secondHidden="secondHidden"
+      :fourthHidden="fourthHidden"
       class="z-20"
     />
     <!-- <div class="h-[2500px]"></div> -->
