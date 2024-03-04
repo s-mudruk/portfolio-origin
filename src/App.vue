@@ -21,6 +21,11 @@ const largeScreen = 1024;
 const extraLargeScreen = 1280;
 const doubleExtraLargeScreen = 1536;
 
+const isMobile = computed(() => {
+  if (viewportWidth.value < smallScreen) return true;
+  else false;
+});
+
 const firstBreak = computed(() => {
   if (viewportWidth.value < doubleExtraLargeScreen) return 2.55;
   else return 2.55;
@@ -84,7 +89,7 @@ const endHidden = computed(() => {
         'mac-wrong': !isWindows,
         'windows-right': isWindows
       }"
-      class="fixed hidden sm:flex z-40 top-8 right-5"
+      class="fixed hidden sm:flex z-50 top-8 right-5"
     />
     <ListMenu class="z-50" />
     <div class="h-28 sm:h-16 lg:h-[10vh] transition-[height]"></div>
