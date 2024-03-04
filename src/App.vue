@@ -13,35 +13,63 @@ const main = ref(null);
 const { x, y } = useScroll(main);
 
 const viewportHeight = ref(window.innerHeight);
+const viewportWidth = ref(window.innerWidth);
 
-const firstBreak = 2.55;
-const secondBreak = 4;
-const thirdBreak = 6.25;
+const smallScreen = 640;
+const mediumSceen = 768;
+const largeScreen = 1024;
+const extraLargeScreen = 1280;
+const doubleExtraLargeScreen = 1536;
+
+const firstBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 2.55;
+  else return 2.55;
+});
+const secondBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 4;
+  else return 4;
+});
+const thirdBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 6.25;
+  else return 6.25;
+});
+const fourthBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 9.2;
+  else return 9.6;
+});
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
+  viewportWidth.value = window.innerWidth;
 });
 
 const firstHidden = computed(() => {
-  return y.value > firstBreak * viewportHeight.value;
+  return y.value > firstBreak.value * viewportHeight.value;
 });
 
 const secondHidden = computed(() => {
   return (
-    y.value <= firstBreak * viewportHeight.value ||
-    y.value > secondBreak * viewportHeight.value
+    y.value <= firstBreak.value * viewportHeight.value ||
+    y.value > secondBreak.value * viewportHeight.value
   );
 });
 
 const fourthHidden = computed(() => {
   return (
-    y.value <= secondBreak * viewportHeight.value ||
-    y.value > thirdBreak * viewportHeight.value
+    y.value <= secondBreak.value * viewportHeight.value ||
+    y.value > thirdBreak.value * viewportHeight.value
   );
 });
 
 const fifthHidden = computed(() => {
-  return y.value <= thirdBreak * viewportHeight.value;
+  return (
+    y.value <= thirdBreak.value * viewportHeight.value ||
+    y.value > fourthBreak.value * viewportHeight.value
+  );
+});
+
+const endHidden = computed(() => {
+  return y.value <= fourthBreak.value * viewportHeight.value;
 });
 </script>
 
@@ -70,10 +98,11 @@ const fifthHidden = computed(() => {
       :secondHidden="secondHidden"
       :fourthHidden="fourthHidden"
       :fifthHidden="fifthHidden"
+      :endHidden="endHidden"
       class="z-20"
     />
     <!-- <div class="h-[2500px]"></div> -->
-    <Scrollbar class="fixed bottom-36 right-12" :x="x" :y="y" />
+    <Scrollbar hidden class="fixed bottom-36 right-12" :x="x" :y="y" />
   </main>
 </template>
 

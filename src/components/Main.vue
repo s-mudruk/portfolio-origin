@@ -10,7 +10,9 @@
     </div>
     <div class="main z-10">
       <!-- SCREEN HEIGHT -->
-      <div class="relative top-0 left-0 sm:h-[1200vh] w-screen z-10"></div>
+      <div
+        class="relative top-0 left-0 sm:h-[1020vh] 2xl:h-[1055vh] w-screen z-10"
+      ></div>
       <img
         ref="portrait"
         :class="{
@@ -531,6 +533,18 @@
         class="sm:absolute sm:h-[45vh] 2xl:h-[48.76vh] sm:top-[875vh] 2xl:top-[910vh] sm:left-[12vw] z-20 transition-transform"
       />
     </abbr>
+    <div
+      :class="{ 'opacity-0': endHiddenRef }"
+      class="sm:absolute sm:flex sm:flex-col sm:justify-between sm:top-[946vh] 2xl:top-[983vh] sm:h-[75vh] 2xl:h-[75vh] sm:w-full sm:px-8 2xl:px-9 text-2xl sm:text-3xl xl:text-[33px] z-40"
+    >
+      <span
+        @click="sayWorkInProgress"
+        class="underline hover:text-[#7D83FF] cursor-pointer"
+        >Тык ми</span
+      >
+      <span class="self-center">Coming soon...</span>
+      <span class="self-end">Конец.</span>
+    </div>
   </div>
 </template>
 
@@ -546,17 +560,25 @@ import SectionFourOutro from './SectionFourOutro.vue';
 import { useElementHover } from '@vueuse/core';
 import SectionFiveIntro from './SectionFiveIntro.vue';
 
+const sayWorkInProgress = () => {
+  window.alert(
+    'Сайт активно обновляется, поэтому не все работы присутствуют на данном лендинге. В скором времени все проекты появятся.'
+  );
+};
+
 const properties = defineProps({
   firstHidden: Boolean,
   secondHidden: Boolean,
   fourthHidden: Boolean,
-  fifthHidden: Boolean
+  fifthHidden: Boolean,
+  endHidden: Boolean
 });
 
 const firstHiddenRef = toRef(properties, 'firstHidden');
 const secondHiddenRef = toRef(properties, 'secondHidden');
 const fourthHiddenRef = toRef(properties, 'fourthHidden');
 const fifthHiddenRef = toRef(properties, 'fifthHidden');
+const endHiddenRef = toRef(properties, 'endHidden');
 
 // const firstPartHidden = computed(() => {
 //   return properties.scroll < 2450;
