@@ -7,6 +7,9 @@ import ListMenu from './components/ListMenu.vue';
 
 import { ref, computed } from 'vue';
 import { useScroll } from '@vueuse/core';
+import MobileDetect from 'mobile-detect';
+
+const md = new MobileDetect(window.navigator.userAgent);
 
 const isWindows = ref(navigator.platform.toLowerCase().includes('win'));
 const main = ref(null);
@@ -22,7 +25,7 @@ const extraLargeScreen = 1280;
 const doubleExtraLargeScreen = 1536;
 
 const isMobile = computed(() => {
-  if (viewportWidth.value < smallScreen) return true;
+  if (viewportWidth.value < smallScreen || md.mobile()) return true;
   else false;
 });
 
@@ -80,6 +83,7 @@ const endHidden = computed(() => {
 
 <template>
   <main
+    v-if="!isMobile"
     ref="main"
     class="relative text-[#1B1B1B] bg-[#FBFCFC] min-w-80 max-w-[100dvw] h-[100dvh] px-4 sm:px-0 py-9 sm:py-0 font-liter overflow-hidden overflow-y-auto z-10"
   >
@@ -108,6 +112,15 @@ const endHidden = computed(() => {
     />
     <!-- <div class="h-[2500px]"></div> -->
     <Scrollbar hidden class="fixed bottom-36 right-12" :x="x" :y="y" />
+  </main>
+  <main
+    class="flex flex-col text-3xl justify-center items-center fixed top-0 left-0 h-[100dvh] w-[100dvw] gap-32 font-liter"
+  >
+    <span class="text-center"
+      >Мобильная версия сайта
+      <span class="whitespace-nowrap"> пока недоступна</span>. <br />
+      Приносим извинения.</span
+    >
   </main>
 </template>
 
