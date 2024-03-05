@@ -46,7 +46,7 @@
         alt="image two"
         class="sm:absolute sm:h-[60vh] 2xl:h-[70vh] sm:top-[13vh] sm:right-8 xl:right-9 z-30 transition-transform"
       />
-      <abbr title="+79873971117 Text me 😉">
+      <abbr title="">
         <img
           ref="img_1_3"
           :class="{
