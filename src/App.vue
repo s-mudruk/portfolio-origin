@@ -30,21 +30,41 @@ const isMobile = computed(() => {
 });
 
 const firstBreak = computed(() => {
-  if (viewportWidth.value < doubleExtraLargeScreen) return 2.55;
-  else return 2.55;
+  if (viewportWidth.value < doubleExtraLargeScreen) return 2.45;
+  else return 2.45;
 });
 const secondBreak = computed(() => {
-  if (viewportWidth.value < doubleExtraLargeScreen) return 4;
-  else return 4;
+  if (viewportWidth.value < doubleExtraLargeScreen) return 3.8;
+  else return 3.8;
 });
 const thirdBreak = computed(() => {
-  if (viewportWidth.value < doubleExtraLargeScreen) return 6.25;
-  else return 6.25;
+  if (viewportWidth.value < doubleExtraLargeScreen) return 6.1;
+  else return 6.1;
 });
 const fourthBreak = computed(() => {
   if (viewportWidth.value < doubleExtraLargeScreen) return 9.2;
   else return 9.6;
 });
+
+const firstMidBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 0.2;
+  else return 0.2;
+})
+
+const secondMidBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 2.9;
+  else return 2.9;
+})
+
+const thirdMidBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 4.2;
+  else return 4.2;
+})
+
+const fourthMidBreak = computed(() => {
+  if (viewportWidth.value < doubleExtraLargeScreen) return 6.15;
+  else return 6.55;
+})
 
 window.addEventListener('resize', () => {
   viewportHeight.value = window.innerHeight;
@@ -52,27 +72,27 @@ window.addEventListener('resize', () => {
 });
 
 const firstHidden = computed(() => {
-  return y.value > firstBreak.value * viewportHeight.value;
+  return y.value > firstMidBreak.value * viewportHeight.value;
 });
 
 const secondHidden = computed(() => {
   return (
     y.value <= firstBreak.value * viewportHeight.value ||
-    y.value > secondBreak.value * viewportHeight.value
+    y.value > secondMidBreak.value * viewportHeight.value
   );
 });
 
 const fourthHidden = computed(() => {
   return (
     y.value <= secondBreak.value * viewportHeight.value ||
-    y.value > thirdBreak.value * viewportHeight.value
+    y.value > thirdMidBreak.value * viewportHeight.value
   );
 });
 
 const fifthHidden = computed(() => {
   return (
     y.value <= thirdBreak.value * viewportHeight.value ||
-    y.value > fourthBreak.value * viewportHeight.value
+    y.value > fourthMidBreak.value * viewportHeight.value
   );
 });
 

@@ -208,7 +208,7 @@
       <img
         src="../img/section3background.svg"
         alt="image fifteen"
-        class="sm:absolute w-[65vw] sm:top-[315vh] sm:left-[15vw] z-30 rotate-[13deg] transition-transform"
+        class="sm:absolute w-[65vw] sm:top-[315vh] sm:left-[15vw] z-10 rotate-[13deg] transition-transform"
       />
     </div>
     <!-- SECTION FOUR -->
@@ -486,7 +486,7 @@
         }"
         src="../img/section5.11.png"
         alt="image thirty seven"
-        class="sm:absolute sm:h-[40vh] 2xl:h-[45vh] sm:top-[785.5vh] 2xl:top-[810vh] sm:left-8 xl:left-9 z-20 transition-transform"
+        class="sm:absolute sm:h-[35vh] 2xl:h-[40vh] sm:top-[785.5vh] 2xl:top-[810vh] sm:left-8 xl:left-9 z-10 transition-transform"
       />
     </abbr>
     <abbr title="">
