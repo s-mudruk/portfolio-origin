@@ -13,6 +13,7 @@
       <div
         class="relative top-0 left-0 sm:h-[1020vh] 2xl:h-[1055vh] w-screen z-10"
       ></div>
+      <abbr title="фото на камеру">
       <img
         ref="portrait"
         :class="{
@@ -22,12 +23,14 @@
         alt="Portrait"
         class="sm:absolute sm:h-[52vh] top-[44.5vh] sm:left-8 xl:left-9 z-30 transition-transform"
       />
+    </abbr>
       <IntroBottom
         :class="{
           'opacity-0': firstHiddenRef
         }"
         class="transition-opacity"
       />
+      <abbr title="пленочное фото">
       <img
         ref="img_1_1"
         :class="{
@@ -37,6 +40,8 @@
         alt="image one"
         class="sm:absolute sm:h-[31vh] 2xl:h-[38vh] sm:top-[38vh] sm:left-[26vw] 2xl:left-[26vw] z-30 transition-transform"
       />
+    </abbr>
+    <abbr title="винтажная цифровая камера">
       <img
         ref="img_1_2"
         :class="{
@@ -46,7 +51,8 @@
         alt="image two"
         class="sm:absolute sm:h-[60vh] 2xl:h-[70vh] sm:top-[13vh] sm:right-8 xl:right-9 z-30 transition-transform"
       />
-      <abbr title="">
+    </abbr>
+      <abbr title="это селфи">
         <img
           ref="img_1_3"
           :class="{
@@ -57,7 +63,7 @@
           class="sm:absolute sm:h-[32vh] 2xl:h-[36vh] sm:top-[49vh] sm:right-[32vw] 2xl:right-[34vw] z-30 transition-transform"
         />
       </abbr>
-      <abbr title="">
+      <abbr title="фотограф: @burychev">
         <img
           ref="img_2_1"
           :class="{
@@ -533,6 +539,21 @@
         class="sm:absolute sm:h-[45vh] 2xl:h-[48.76vh] sm:top-[875vh] 2xl:top-[910vh] sm:left-[12vw] z-20 transition-transform"
       />
     </abbr>
+
+    <!-- SECTION SIX -->
+
+    <abbr title="">
+      <img
+        ref="img_5_14"
+        :class="{
+          'scale-105 z-50 ': isHoveredImg_5_14
+        }"
+        src="../img/section5.14.png"
+        alt="image thirty nine"
+        class="sm:absolute sm:h-[30vh] 2xl:h-[36vh] sm:top-[888vh] 2xl:top-[923vh] sm:right-[14vw] 2xl:right-[18vw] z-20 transition-transform"
+      />
+    </abbr>
+
     <div
       :class="{ 'opacity-0': endHiddenRef }"
       class="sm:absolute sm:flex sm:flex-col sm:justify-between sm:top-[946vh] 2xl:top-[983vh] sm:h-[75vh] 2xl:h-[75vh] sm:w-full sm:px-8 2xl:px-9 text-2xl sm:text-3xl xl:text-[33px] z-40"

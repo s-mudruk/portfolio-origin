@@ -1,4 +1,5 @@
 <script setup>
+
 import Header from './components/Header.vue';
 import HeaderButtons from './components/HeaderButtons.vue';
 import Main from './components/Main.vue';
@@ -62,7 +63,7 @@ const thirdMidBreak = computed(() => {
 })
 
 const fourthMidBreak = computed(() => {
-  if (viewportWidth.value < doubleExtraLargeScreen) return 6.15;
+  if (viewportWidth.value < doubleExtraLargeScreen) return 6.45;
   else return 6.55;
 })
 
